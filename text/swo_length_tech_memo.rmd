@@ -260,6 +260,8 @@ The bootstrap-simulation was developed in R [@Rcore] and is available via GitHub
 
 <div id="refs"></div>
 
+\newpage
+
 # Tables 
 
 Table 1. Species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections. (maybe could even merge this table with one that reports the average historical length sample sizes)
