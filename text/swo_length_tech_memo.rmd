@@ -245,11 +245,29 @@ The bootstrap-simulation was developed in R [@Rcore] and is available via GitHub
 
 # Results 
 
-[Para on reduction in historical sampling based on sub-sample sizes]
+[Para on reduction in historical sampling based on sub-sample sizes, i.e., the avg number of lengths that could be saved, Table XX]
 
-[Para on ESS compared to base - both using boxplots and harmonic mean]
+In general, for each region investigated the mean of the replicated sex-specific effective sample size for length composition increased as the number of collected lengths for which sex was determined increased (Figures 2 - 4). 
+For a number of species, the subsampling case of 175 sexed lengths was nearly equivalent to the base case (in which non subsampling occurred), indicating that for these species around 175 or less lengths have been subsequently sexed historically.
+There were notable exceptions, including ***** (I think EBS pollock and maybe a couple others will fall in here), indicating that in the historical surveys there were a number of hauls in which more that 175 length collections were subsequently sexed. 
+For nearly all the species investigated (or all, will need to see results), the mean of the replicated effective sample size for the total length composition (the sum of the female, male, and unsexed population at length estimates) were insensitive to the sexed subsampling cases. (Any exceptions to previous statement here)
 
-[Para on proportion of base ESS]
+Results of the sex-specific input sample size for length composition also mimicked the results of the replicated effective sample size for each region; in general, as the sexed subsampling level increased the input sample size increased (Figures 5-7). 
+Exceptions were… 
+The magnitude of input sample size was sensitive to the species and the survey year. 
+In general, 
+larger input sample sizes were associated with species who were sampled more frequently. 
+The effect of the survey year on the input sample size could also be associated with the sample size for that year, but would also be related to the structure of the length composition (i.e., uni- or multi-modal length compositions). 
+Sex-specific input sample sizes for length frequency ranged from around 50 to 750. 
+Similar to the results of the replicated effective sample size, the input sample size for the total length composition remained generally unchanged across the sexed subsampling cases investigated. 
+Total input sample size for length were species-specific, with values around 50 for less frequently sampled species to 1250 for more frequently sampled species.
+
+
+Compared to the base input sample size, the proportion of the base input sample size for each sexed subsampling case was similar for females and males, but were different across species and survey years (Figures 8-10). 
+The sex-specific proportion of base input sample size increased as the sexed subsample size increased, and for the smallest sexed subsampling case the sex-speicic input sample size was less than 0.5 of the base input sample size for some species.
+Again, the proportion of the base input sample size for the total length composition was relatively unchanged across the sexed subsampling cases. 
+Exceptions were… For a number of species and survey years the sex-specific proportion for the sexed subsampling cases were similar to the base input sample size, particularly for sexed subsampling sizes greater than 100. 
+In general, the proportion of the sexed subsample size of 100 was greater than 0.75 of the base input sample size.
 
 # Discussion
 [Cost-benefit para]
@@ -266,6 +284,8 @@ The bootstrap-simulation was developed in R [@Rcore] and is available via GitHub
 
 Table 1. Species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections. (maybe could even merge this table with one that reports the average historical length sample sizes)
 [Table in word]
+
+Table XX. Number of historical samples that would have moved to the ‘unsexed’ category for each sexed subsampling case investigated.
 
 \newpage
 
