@@ -27,7 +27,7 @@ institute:
 
 output:
   bookdown::word_document2:
-    toc: true
+    toc: false
     number_sections: false
     reference_docx: styles_reference.docx
     pandoc_args:  
@@ -49,6 +49,7 @@ header-includes:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FALSE)
+source(here::here('R', "render_toc.R"))
 ```
 
 
@@ -60,6 +61,12 @@ In December 2021 a working group was formed (the Survey Workflow Optimization wo
 Over the spring of 2022 the working group developed a bootstrap-simulation approach that determined the amount of uncertainty gained by reducing the amount of length frequency data for which sex was subsequently determined. 
 It was shown that the length composition input sample size was reduced by 25% or less compared to the input sample size for the full historical data sets for subsampling levels of 100 fish per haul for which sex was subsequently determined. 
 Upon meeting with stock assessment authors the joint recommendation between the working group and assessment authors to the survey staff was to limit length frequency data for which sex is subsequently determined to 100 subsampled fish per haul.
+
+\newpage
+
+```{r toc}
+render_toc("swo_length_tech_memo.Rmd")
+```
 
 # Introduction 
 
