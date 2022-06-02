@@ -1,5 +1,5 @@
 ---
-title: "Effort optimization of bottom trawl subsampling of fish by sex and size: tradeoffs between stock assessment effective sample size and survey workforce health and efficiency"
+title: "Subsampling of length frequency to determine sex in Alaska Fishery Science Center bottom trawl surveys"
 
 author:
   - name: Pete Hulson
@@ -27,7 +27,7 @@ institute:
 
 output:
   bookdown::word_document2:
-    toc: false
+    toc: true
     number_sections: false
     reference_docx: styles_reference.docx
     pandoc_args:  
@@ -64,37 +64,24 @@ Upon meeting with stock assessment authors the joint recommendation between the 
 # Introduction 
 
 The National Oceanic and Atmospheric Administration’s (NOAA’s) Alaska Fisheries Science Center (AFSC) has conducted effort-standardized bottom trawl surveys in the eastern Bering Sea (EBS), Gulf of Alaska (GOA) and Aleutian Islands (AI) since 1982 [@Stauffer2004]. 
-These resource surveys comprehensively catalog the biota encountered at each sampling station. Observations of sex-specific size distributions for each encountered species are collected by: 1. sorting the trawl sample by species; 2. weighing each species in aggregate; 3. obtaining a random subsample of target sample size; 4. sorting the length subsample by sex (each fish is cut with a scalpel, gonads identified and placed in a sex-specific receptacle); 5. and measuring and recording each fish length (each fish is placed on a measuring board, length is identified and the species, sex and measurement are recorded into a computer). 
+These resource surveys comprehensively catalog the biota encountered at each sampling station. Observations of sex-specific size distributions for each encountered species are collected by: 
+(1) sorting the trawl sample by species, 
+(2) weighing each species in aggregate, 
+(3) obtaining a random subsample of target sample size; 
+(4) sorting the length subsample by sex (each fish is cut with a scalpel, gonads identified and placed in a sex-specific receptacle), and (5) and measuring and recording each fish length (each fish is placed on a measuring board, length is identified and the species, sex and measurement are recorded into a computer). 
 This length measurement process is repeated over 100,000 times in a given survey each year, representing a daunting amount of work for 6 field scientists per research vessel. 
 Each year, this work flow results in acute and repetitive stress injuries, some requiring medical interventions and claims to the U.S. Office of Workers' Compensation Programs. 
 Another consequence of the intensity of this work are unrecoverable errors in the observed data; as fatigue or injuries accumulate during the course of field work, so do data collection errors (e.g. failure to properly encode length measurements with the correct species or sex or incorrect identification of sex), despite extensive *in situ* quality assurance protocols.
 
-Many integrated fishery stock assessments rely on estimates of fish population size composition either directly [@Punt2013] or as a derived quantity [e.g. age composition, @Maunder2015]. 
-The most reliable size composition estimates are based on observations from fishery-independent surveys because these platforms generally avoid the sample selection bias inherent in directed commercial fisheries [@NRC1998]. 
-Past analyses have focused on the statistical efficiency of composition estimates for data weighting and applications to likelihood functions. 
-It is recognized in sampling theory that increasing the number of samples increases the precision of the estimate, and from this perspective, one should require the maximum number of samples per each survey observation.
-However, each fish sampled on a survey has both an immediate physical labor cost (e.g. at-sea time management issues) and a cumulative health cost (e.g. repetitive stress injuries). 
-Herein, we address the efficiency of obtaining samples for size composition estimates and the resulting impacts on the uncertainty of these estimates on stock assessment models.
-
-At the AFSC, length frequency sampling from the bottom trawl surveys is used in stock assessment models in a variety of ways to inform estimates of population abundance that are subsequently used to set management quantities. 
-The most common use of length frequency sampling is to derive population estimates at size that are then used in an age-length key to estimate population estimates at age and the model is fit to these age composition estimates [e.g., @Spence; @Monnahan]. 
-Length frequency samples are also used in many flatfish assessments in a conditional-age-at-length framework [@Punt] that both fits the length composition and enables estimation of growth internally to the assessment [e.g., @Bryan; @McGilliard]. 
-In some cases, where age data is not available, length frequency samples which have been expanded to population size estimates are used directly as composition data within the assessment (flathead ref? Or drop sentence?). Finally, recent developments have included using length frequency samples in a model-based framework to estimate length and age composition estimates [VAST ref, @Ianelli; @Thompson].
-
-It has become commonly understood that sampling to determine age and length composition on fishery-independent or fishery-dependent platforms can be influenced by intra-haul correlation, or, that samples are taken from a school of fish that are very similar to each other in size and/or age that may not be representative of the overall population’s size and/or age distribution [e.g., @Pennington]. 
-In order to evaluate and identify the level of intra-haul correlation, and how this can be accounted for in stock assessment, the concept of ‘effective sample size’ has been developed, in which the effective sample size is smaller than the actual sample size and reflects the increase in uncertainty that is due to the intra-haul correlation displayed by the species that are sampled [e.g., @Mcallister1997]. 
-A number of studies have used effective sample size to evaluate the impact on assessment results [@ref], whether effective sample size can be estimated by the assessment model [@Francis; @Thorson; @Hulson], and more recently as a tool to evaluate the implications of changes to sampling methodologies and the subsequent influence on assessment model results [@Siskey]. 
-Overall, the use of effective sample size has become a universal method to evaluate uncertainty in length and age composition data.
-
-In December of 2021 an AFSC working group was formed (the ‘Survey Workload Optimization’ working group, SWO) to evaluate the impacts of reducing sampling for sex within the length frequency data collections due to repetitive motion injuries that have been occuring on the bottom trawl surveys. 
+In December of 2021 an AFSC working group was formed (the ‘Survey Workload Optimization’ working group, SWO) to evaluate the impacts of reducing sampling for sex within the length frequency data collections due to repetitive motion injuries that have been occuring on the bottom trawl surveys.
 From the stock assessment perspective, the primary concern when reducing the sampling for sex within the length frequency data collections was the impact on the uncertainty in subsequent sex-specific length composition data. 
-This is of particular importance to stock assessments that are sex-specific, such as the flatfish assessemnts conducted by AFSC. 
-To that end, using effective sample size as the primary statistic to evaluate uncertainty in the length composition data that is derived from the bottom trawl surveys we evaluated the impact of reducing sampling for sex within the length frequency data collection to answer three questions: (1) what is the impact of reducing sampling for sex on the uncertainty in the sex-specific length composition? (2) Is there a point of diminishing returns as we increase the number of lengths that are sampled for sex? And, (3) is there an acceptable level of increase in uncertainty in sex-specific length composition data due to subsampling for sex?
+This is of particular importance to stock assessments that are sex-specific, such as the flatfish assessments conducted by AFSC. 
+To that end, we evaluated the impact of reducing sampling for sex within the length frequency data collection to answer two questions: (1) what is the impact of reducing sampling for sex on the uncertainty in the sex-specific length composition?
+And, (2) is there an acceptable level of increase in uncertainty in sex-specific length composition data due to subsampling for sex?
 
-# Methods 
+# Materials and Methods 
 ## Survey data 
 Data collection for each AFSC groundfish survey is described in respective NOAA Technical Memoranda [EBS: @Lauth2019; AI: @vonSzalay2017; GOA: @vonSzalay2018].
-**YEAR RANGE of SIMULATION ANALYSIS** 
 Fundamental methods of length sample collection are generally synchronized between these surveys, with species-specific exceptions for minimum length subsample size. 
 Survey protocols include sampling bimodal length distributions separately (e.g. many juveniles and fewer adults within one species), which are then extrapolated to the total estimated number of individuals in each length mode category for that trawl sample and aggregated. 
 Some species’ gonads are difficult to successfully distinguish in the field, and a length threshold is determined (e.g. approximately 10-15 cm for walleye pollock) below which sex is coded as “unsexed”.
@@ -104,22 +91,23 @@ Survey length subsampling protocols have been altered at least once during the t
 Prior to an analysis of length frequency sample size [@Gerritsen2007], AFSC trawl survey standard operating procedures directed scientists to collect a minimum of 200 length specimens per species where more than 200 were in a trawl sample. 
 In the EBS survey, the principles suggested by [@Gerritsen2007], specifically that 10 random length specimens should be sampled for each size bin range of a sample, have been applied to some species, although with varying consistency. 
 
-**Paragraph on oversampling**
-
-[Historical sample size para]
+**[Historical sample size para - including table of avg of total sample size over the most recent 3 years and average sample size per haul by sex category, could include Meaghan’s figures from presentation too]**
 
 ## Expanding length frequency to population abundance at length
-Length frequency samples collected by the AFSC bottom trawl surveys are expanded by catch and stratum area to obtain estimates of population abundance at length. This is often referred to as the ‘first stage expansion’ and is a common method to obtain population estimates at length from area-swept survey data (ref). Population abundance at length are computed for three sex categories: males, females, and unsexed at the stratum level, which are then summed across stratum to obtain the population abundance at length for the management-scale region (i.e., BS, AI, or GOA), these can also be summed to any sub-region level.
+Length frequency samples collected by the AFSC bottom trawl surveys are expanded by catch and stratum area to obtain estimates of population abundance at length. 
+This is often referred to as the ‘first stage expansion’ and is a common method to obtain population estimates at length from area-swept survey data (ref). 
+Population abundance at length are computed for three sex categories: males, females, and unsexed at the stratum level, which are then summed across stratum to obtain the population abundance at length for the management-scale region (i.e., BS, AI, or GOA), these can also be summed to any sub-region level.
 
-In the first step of this process we compute the overall population numbers in year-y within stratum-st (##) with:
-
-[eqn in word doc]
-
-where ## is the area of stratum-st (in km^2^), and ## is the average catch per unit effort of numbers captured across the hauls within a strata, given by:
+In the first step of this process we compute the overall population numbers in year-*y* within stratum-*st* (##) with:
 
 [eqn in word doc]
 
-where ## is the number of hauls, $L_infty$ is the catch per unit effort of numbers caught within a haul-h, ## is the catch (in numbers) in haul-h, and ## is the effort in haul-h, which is computed as the net width multiplied by the time on bottom, or, the area swept by the haul (in km^2^). Next, the ratio of catch per unit effort among hauls (##) is computed by:
+where ## is the area of stratum-*st* (in km^2^), and ## is the average catch per unit effort of numbers captured across the hauls within a strata, given by:
+
+[eqn in word doc]
+
+where ## is the number of hauls, is the catch per unit effort of numbers caught within a haul-h, ## is the catch (in numbers) in haul-*h*, and ## is the effort in haul-*h*, which is computed as the net width multiplied by the time on bottom, or, the area swept by the haul (in km^2^). 
+Next, the ratio of catch per unit effort among hauls (##) is computed by:
 
 [eqn in word doc]
 
@@ -127,7 +115,9 @@ where ## is the catch per unit effort of numbers caught within a haul-h. We then
 
 [eqn in word doc]
 
-where ## is the length frequency sampled, in numbers, by sex-sx and length-l. In some cases there are hauls that have catch for a species but did not collect length frequency data, in this case (2) is applied in order to account for the unknown length frequency in these hauls, otherwise, if length frequency samples are obtained (1) is applied. Finally, we estimate the sex-specific population abundance at length within strata-st with:
+where ## is the length frequency sampled, in numbers, by sex-*sx* and length-*l*. 
+In some cases there are hauls that have catch for a species but did not collect length frequency data, in this case (2) is applied in order to account for the unknown length frequency in these hauls, otherwise, if length frequency samples are obtained (1) is applied. 
+Finally, we estimate the sex-specific population abundance at length within strata-st with:
 
 [eqn in word doc]
 
@@ -171,16 +161,24 @@ In this bootstrap-simulation, the number of lengths in a given haul must be less
   (\#eq:eqn1)
 \end{equation}
 
-The bootstrap-simulation then repeated steps 1-5 iteratively for each sex sub-sample size determined in step 1, providing iterated sex-specific population abundance at length that was then compared to the histrocical sex-specific population abundance at length determined by the bottom trawl surveys.
+The bootstrap-simulation then repeated steps 1-3 iteratively for each sex sub-sample size determined in step 1, providing iterated sex-specific population abundance at length that was then compared to the historical sex-specific population abundance at length determined by the bottom trawl surveys.
 
-## Computing effective sample size
+We applied the bootstrap-simulation to species that were most commonly captured in the EBS, AI, and GOA bottom trawl surveys (Table \@ref(tab:tbl1)). 
+The subsample levels for subsequent sex determination from the length frequency collections that we evaluated were 50, 75, 100, 125, 150, and 175 samples. 
+We also ran the bootstrap-simulation for the historical number of sexed length frequency collections without subsetting in order to compare the base level uncertainty to the increase in uncertainty gained through subsampling. 
+We ran the bootstrap-simulation for 500 iterations, which was a level for which the variability in population abundance at length results had stabilized, and applied the bootstrap-simulation to the most recent 3 years of the respective bottom trawl surveys, which were the most indicative of the current sampling levels. 
+The bootstrap-simulation was developed in R [@Rcore] and is available via GitHub as an R package (https://github.com/BenWilliams-NOAA/swo).
+
+## Computing effective sand input ample size
 Effective sample size, as introduced by @Mcallister1997, is a statistic that can evaluate the level of intra-haul correlation in composition samples that are collected on a survey (whether from age or length frequency collections). 
 It is also a statistic that can evaluate the amount of uncertainty in an estimated composition compared to an observed composition. 
 Effective sample size is given by:
 
-[eqn in word doc]
+\begin{equation}
 
-where ## is the estimated proportion for category-c (which can be either age or length or any other arbitrary category across which proportions are computed) and ## is the observed proportion.
+\end{equation}
+
+where ## is the estimated proportion for category-*c* (which can be either age or length or any other arbitrary category across which proportions are computed) and ## is the observed proportion.
  
 In this bootstrap-simulation the underlying length composition derived from the historical bottom trawl surveys was treated as the observed proportions ## in equation \@ref(eg:eqn2). 
 For each iteration of the bootstrap simulation for a determined sex sub-sample size we computed a sex-specific estimated proportion (##) that was then compared to the underlying historical sex-sepeciifc length composition (the effective sample size for the total length composition, as the sum of population abundance at length, was also computed). 
@@ -188,12 +186,7 @@ Thus, across each iteration of the bootstrap simulation we computed an effective
 To summarize the effective sample sizes across iterations we used the harmonic mean, which has been shown to reduce bias in recovering the true sample size in simulations for a multinomial distribution and due to this reduced bias, the harmonic mean has also been recommended to be used to determine the ‘input sample size’ that is then used in stock assessment models to fit compositional data [@Stewart2014]. 
 Herein, when we use the term ‘effective sample size’ we are referring to the effective sample sizes that were computed for each iteration of the bootstrap simulation, when we use the term ‘input sample size’ we are referring to the harmonic mean of the iterated effective sample sizes.
 
-## Bootstrap-simulation application
-We applied the bootstrap-simulation to species that were most commonly captured in the EBS, AI, and GOA bottom trawl surveys (Table 1). 
-The subsample levels for subsequent sex determination from the length frequency collections that we evaluated were 50, 75, 100, 125, 150, and 175 samples. 
-We also ran the bootstrap-simulation for the historical number of sexed length frequency collections without subsetting in order to compare the base level uncertainty to the increase in uncertainty gained through subsampling. 
-We ran the bootstrap-simulation for 500 iterations, which was a level for which the variability in population abundance at length results had stabilized, and applied the bootstrap-simulation to the most recent 3 years of the respective bottom trawl surveys, which were the most indicative of the current sampling levels. 
-The bootstrap-simulation was developed in R [@Rcore] and is available via GitHub as an R package (https://github.com/BenWilliams-NOAA/swo).
+
 
 # Results 
 
@@ -201,11 +194,11 @@ The bootstrap-simulation was developed in R [@Rcore] and is available via GitHub
 
 In general, for each region investigated the mean of the replicated sex-specific effective sample size for length composition increased as the number of collected lengths for which sex was determined increased (Figures 2 - 4). 
 For a number of species, the subsampling case of 175 sexed lengths was nearly equivalent to the base case (in which non subsampling occurred), indicating that for these species around 175 or less lengths have been subsequently sexed historically.
-There were notable exceptions, including ***** (I think EBS pollock and maybe a couple others will fall in here), indicating that in the historical surveys there were a number of hauls in which more that 175 length collections were subsequently sexed. 
-For nearly all the species investigated (or all, will need to see results), the mean of the replicated effective sample size for the total length composition (the sum of the female, male, and unsexed population at length estimates) were insensitive to the sexed subsampling cases. (Any exceptions to previous statement here)
+There were notable exceptions, including ***** (*I think EBS pollock and maybe a couple others will fall in here*), indicating that in the historical surveys there were a number of hauls in which more that 175 length collections were subsequently sexed. 
+For nearly all the species investigated (*or all, will need to see results*), the mean of the replicated effective sample size for the total length composition (the sum of the female, male, and unsexed population at length estimates) were insensitive to the sexed subsampling cases. (*Any exceptions to previous statement here*)
 
 Results of the sex-specific input sample size for length composition also mimicked the results of the replicated effective sample size for each region; in general, as the sexed subsampling level increased the input sample size increased (Figures 5-7). 
-Exceptions were… 
+*Exceptions were…* 
 The magnitude of input sample size was sensitive to the species and the survey year. 
 In general, 
 larger input sample sizes were associated with species who were sampled more frequently. 
@@ -214,11 +207,11 @@ Sex-specific input sample sizes for length frequency ranged from around 50 to 75
 Similar to the results of the replicated effective sample size, the input sample size for the total length composition remained generally unchanged across the sexed subsampling cases investigated. 
 Total input sample size for length were species-specific, with values around 50 for less frequently sampled species to 1250 for more frequently sampled species.
 
-
 Compared to the base input sample size, the proportion of the base input sample size for each sexed subsampling case was similar for females and males, but were different across species and survey years (Figures 8-10). 
 The sex-specific proportion of base input sample size increased as the sexed subsample size increased, and for the smallest sexed subsampling case the sex-speicic input sample size was less than 0.5 of the base input sample size for some species.
 Again, the proportion of the base input sample size for the total length composition was relatively unchanged across the sexed subsampling cases. 
-Exceptions were… For a number of species and survey years the sex-specific proportion for the sexed subsampling cases were similar to the base input sample size, particularly for sexed subsampling sizes greater than 100. 
+*Exceptions were…*
+For a number of species and survey years the sex-specific proportion for the sexed subsampling cases were similar to the base input sample size, particularly for sexed subsampling sizes greater than 100. 
 In general, the proportion of the sexed subsample size of 100 was greater than 0.75 of the base input sample size.
 
 # Discussion
@@ -234,8 +227,12 @@ In general, the proportion of the sexed subsample size of 100 was greater than 0
 
 # Tables 
 
-Table 1. Species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections. (maybe could even merge this table with one that reports the average historical length sample sizes)
-[Table in word]
+```{r tbl1}
+# this is an example table
+knitr::kable(mtcars[1:5, 1:5], caption = "Species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections. (maybe could even merge this table with one that reports the average historical length sample sizes).")
+```
+
+
 
 Table XX. Number of historical samples that would have moved to the ‘unsexed’ category for each sexed subsampling case investigated.
 
