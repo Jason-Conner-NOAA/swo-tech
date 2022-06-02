@@ -2,27 +2,28 @@
 title: "Effort optimization of bottom trawl subsampling of fish by sex and size: tradeoffs between stock assessment effective sample size and survey workforce health and efficiency"
 
 author:
-  - name: Meaghan Bryan
-    institute: afscsea
-  - name: Jason Conner
-    institute: afscsea
   - name: Pete Hulson
     institute: afscjnu
     email: pete.hulson@noaa.gov
     correspondence: true
-  - name: Stan Kotwicki
+  - name: Benjamin Williams
+    institute: afscjnu    
+  - name: Meaghan Bryan
     institute: afscsea
-  - name: Susanne Mcdermott
+  - name: Jason Conner
     institute: afscsea
   - name: Matthew Siskey
     institute: afscsea
   - name: William Stockhausen
     institute: afscsea
-  - name: Benjamin Williams
-    institute: afscjnu                    
+  - name: Susanne Mcdermott
+    institute: afscsea
+  - name: Chris Long
+    institute: afscsea
+
 institute:
-  - afscsea: NOAA, AFSC Seattle
-  - afscjnu: NOAA AFSC, Juneau
+  - afscsea: NOAA, AFSC, Seattle
+  - afscjnu: NOAA, AFSC, Juneau
 
 output:
   bookdown::word_document2:
@@ -52,63 +53,10 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FA
 
 
 # Abstract 
-[To be written]
+
+On the Alaska Fishery Science Center bottom trawl surveys length frequency data are collected and sex is subsequently determined from a subset of these collected data so that sex-specific length composition data are available for assessment of groundfish stocks. Determining sex from the length frequency data has resulted in acute and repetitive stress injuries of survey staff, and these injuries have become increasingly common. In December 2021 a working group was formed (the Survey Workflow Optimization working group) to evaluate the effect on length composition uncertainty of reducing the amount of length frequency data for which sex is determined from historical levels in the bottom trawl surveys. Over the spring of 2022 the working group developed a bootstrap-simulation approach that determined the amount of uncertainty gained by reducing the amount of length frequency data for which sex was subsequently determined. It was shown that the length composition input sample size was reduced by 25% or less compared to the input sample size for the full historical data sets for subsampling levels of 100 fish per haul for which sex was subsequently determined. Upon meeting with stock assessment authors the joint recommendation between the working group and assessment authors to the survey staff was to limit length frequency data for which sex is subsequently determined to 100 subsampled fish per haul.
 
 # Introduction 
-
-## Objective
-
-- Detail methods to estimate length expansion
-- Document sub-sampling for sexed length routine
-- Document results of SWO working group
-- Present species-specific results effects on length uncertainty
-
-## Outline
-
-- Introduction
- + General para outlining length sampling on survey
- + General para outlining length data use in assessment
-   - Pertaining to age-length key
-   - Pertaining to conditional age-at-length
-   - How does subsampling level impact length comps used in assessment?
-      - Autocorrelation of lengths within 1 haul sample
-      - Sizecomps aggregated to stratum or total survey area 
-      - Intro of effective sample size concept and how these describe the deviation from true distributions at local and aggregate scales
-   - Problem statement para
-      - Investigated sex sub-sampling at various levels
-      - Analysis directed at impact on length comp uncertainty
-- Methods
- + Survey data used
-   - Distinctions between EBS/NBS, GOA and AI (Figure - bottom trawl survey extents and strata)
-   - Overview of historical sexed length samples (Figure - scatter of lengths taken per estimated catch numbers per haul)
- + Detailed description of length expansion methods
-   - General length expansion
-   - Special cases (juvenile expansion)
- + Simulation framework
-   - Overall workflow with added details on:
-   - Setting sex-subsampling levels
-   - Resampling haul/length freq methods
- + Calculation of diagnostics
-   - Effective sample size (ESS)
-   - Input sample size (harmonic mean of ESS)
- + Description of simulation application particulars
-   - Species - all that have # > 100 sex-subsamples within a given survey (table of species/tier/avg total length sample size/avg total    - sex-sample size/avg sex-sample size per haul)
-   - Most recent 3 surveys (most applicable time frame to move forward with)
-- Results of sex-subsampling
-  + Point/line plots
-  + Bar plot of annual harmonic mean
-  + Point/line plot of annual proportion of base input sample size
-  + Present for:
-    - EBS/NBS
-    - AI
-    - GOA
-- Discussion
-  + Cost-benefit of size-comp precision for stock assessment
-    - Cost of survey labor/health
-    - Benefit - levels of sizecomp precision in SAFE
-  + Para on SWO meeting with authors and recommendation
-    - In 2022 adopted 100 sex-length subsample as a “target” not a minimum for EBS/NBS and AI surveys
-
 
 The National Oceanic and Atmospheric Administration’s (NOAA’s) Alaska Fisheries Science Center (AFSC) has conducted effort-standardized bottom trawl surveys in the eastern Bering Sea (EBS), Gulf of Alaska (GOA) and Aleutian Islands (AI) since 1982 [@Stauffer2004]. 
 These resource surveys comprehensively catalog the biota encountered at each sampling station. Observations of sex-specific size distributions for each encountered species are collected by: 1. sorting the trawl sample by species; 2. weighing each species in aggregate; 3. obtaining a random subsample of target sample size; 4. sorting the length subsample by sex (each fish is cut with a scalpel, gonads identified and placed in a sex-specific receptacle); 5. and measuring and recording each fish length (each fish is placed on a measuring board, length is identified and the species, sex and measurement are recorded into a computer). 
