@@ -41,7 +41,7 @@ csl: canjfas.csl
 header-includes:
   - \usepackage(amsmath) # for cases in equations
   - \usepackage{booktabs}
-  - \usepackage{cleveref}
+  - \usepackaee{cleveref}
 
   - \renewcommand{\eqref}{\Cref}
   - \Crefformat{equation}{#2#1#3}
@@ -54,7 +54,12 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, error = FA
 
 # Abstract 
 
-On the Alaska Fishery Science Center bottom trawl surveys length frequency data are collected and sex is subsequently determined from a subset of these collected data so that sex-specific length composition data are available for assessment of groundfish stocks. Determining sex from the length frequency data has resulted in acute and repetitive stress injuries of survey staff, and these injuries have become increasingly common. In December 2021 a working group was formed (the Survey Workflow Optimization working group) to evaluate the effect on length composition uncertainty of reducing the amount of length frequency data for which sex is determined from historical levels in the bottom trawl surveys. Over the spring of 2022 the working group developed a bootstrap-simulation approach that determined the amount of uncertainty gained by reducing the amount of length frequency data for which sex was subsequently determined. It was shown that the length composition input sample size was reduced by 25% or less compared to the input sample size for the full historical data sets for subsampling levels of 100 fish per haul for which sex was subsequently determined. Upon meeting with stock assessment authors the joint recommendation between the working group and assessment authors to the survey staff was to limit length frequency data for which sex is subsequently determined to 100 subsampled fish per haul.
+On the Alaska Fishery Science Center bottom trawl surveys length frequency data are collected and sex is subsequently determined from a subset of these collected data so that sex-specific length composition data are available for assessment of groundfish stocks. 
+Determining sex from the length frequency data has resulted in acute and repetitive stress injuries of survey staff, and these injuries have become increasingly common. 
+In December 2021 a working group was formed (the Survey Workflow Optimization working group) to evaluate the effect on length composition uncertainty of reducing the amount of length frequency data for which sex is determined from historical levels in the bottom trawl surveys. 
+Over the spring of 2022 the working group developed a bootstrap-simulation approach that determined the amount of uncertainty gained by reducing the amount of length frequency data for which sex was subsequently determined. 
+It was shown that the length composition input sample size was reduced by 25% or less compared to the input sample size for the full historical data sets for subsampling levels of 100 fish per haul for which sex was subsequently determined. 
+Upon meeting with stock assessment authors the joint recommendation between the working group and assessment authors to the survey staff was to limit length frequency data for which sex is subsequently determined to 100 subsampled fish per haul.
 
 # Introduction 
 
@@ -86,11 +91,10 @@ From the stock assessment perspective, the primary concern when reducing the sam
 This is of particular importance to stock assessments that are sex-specific, such as the flatfish assessemnts conducted by AFSC. 
 To that end, using effective sample size as the primary statistic to evaluate uncertainty in the length composition data that is derived from the bottom trawl surveys we evaluated the impact of reducing sampling for sex within the length frequency data collection to answer three questions: (1) what is the impact of reducing sampling for sex on the uncertainty in the sex-specific length composition? (2) Is there a point of diminishing returns as we increase the number of lengths that are sampled for sex? And, (3) is there an acceptable level of increase in uncertainty in sex-specific length composition data due to subsampling for sex?
 
-
 # Methods 
 ## Survey data 
 Data collection for each AFSC groundfish survey is described in respective NOAA Technical Memoranda [EBS: @Lauth2019; AI: @vonSzalay2017; GOA: @vonSzalay2018].
-**YEAR RANGE of SIMULATION ANALYSIS**  
+**YEAR RANGE of SIMULATION ANALYSIS** 
 Fundamental methods of length sample collection are generally synchronized between these surveys, with species-specific exceptions for minimum length subsample size. 
 Survey protocols include sampling bimodal length distributions separately (e.g. many juveniles and fewer adults within one species), which are then extrapolated to the total estimated number of individuals in each length mode category for that trawl sample and aggregated. 
 Some species’ gonads are difficult to successfully distinguish in the field, and a length threshold is determined (e.g. approximately 10-15 cm for walleye pollock) below which sex is coded as “unsexed”.
@@ -115,7 +119,7 @@ where ## is the area of stratum-st (in km^2^), and ## is the average catch per u
 
 [eqn in word doc]
 
-where ## is the number of hauls, ## is the catch per unit effort of numbers caught within a haul-h, ## is the catch (in numbers) in haul-h, and ## is the effort in haul-h, which is computed as the net width multiplied by the time on bottom, or, the area swept by the haul (in km^2^). Next, the ratio of catch per unit effort among hauls (##) is computed by:
+where ## is the number of hauls, $L_infty$ is the catch per unit effort of numbers caught within a haul-h, ## is the catch (in numbers) in haul-h, and ## is the effort in haul-h, which is computed as the net width multiplied by the time on bottom, or, the area swept by the haul (in km^2^). Next, the ratio of catch per unit effort among hauls (##) is computed by:
 
 [eqn in word doc]
 
@@ -146,7 +150,7 @@ The order of operations (Figure \@ref(fig:length)) has the following schedule, w
 4. Calculate sex-specific population abundance at length, using equations ## - ##
 
 The core of the bootstrap-simulation function (step 3 above) is designed to explore reductions in the sample size of lengths that are then sexed on a per haul basis. 
-In this bootstrap-simulation, the number of lengths in a given haul must be less than or equal to the desired sample size *x* determined in step 2. In step 3, when the number of resampled lengths from step 2 in a haul $n_l$ is less than *x* then $n_l$ is used directly, if $n_l>x$ then a random draw of lengths is taken without replacement in step 3. 
+In this bootstrap-simulation, the number of lengths in a given haul must be less than or equal to the desired sample size *x* determined in step 2. In step 3, when the number of resampled lengths from step 2 in a haul $n_l$ is less than *x* then $n_l$ is used directly, if $n_l>x$ then a random draw of lengths is taken without replacement in step 3.
 
 <!-- 1. reduce total number of length samples - wor  -->
 <!-- 2. shuffle hauls - wr  -->
@@ -161,8 +165,8 @@ In this bootstrap-simulation, the number of lengths in a given haul must be less
 \begin{equation}
  l_{x} = 
   \begin{cases}
-    n_l & n_l\le x\\
-    n_{lx} & n_l > x, wor
+    n_l    & n_l\le x  \\
+    n_{lx} & n_l > x, ~ wor
   \end{cases}
   (\#eq:eqn1)
 \end{equation}
