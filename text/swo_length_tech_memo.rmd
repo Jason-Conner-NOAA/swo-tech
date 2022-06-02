@@ -199,7 +199,7 @@ Herein, when we use the term ‘effective sample size’ we are referring to the
 
 [Para on reduction in historical sampling based on sub-sample sizes, i.e., the avg number of lengths that could be saved, Table XX]
 
-In general, for each region investigated the mean of the replicated sex-specific effective sample size for length composition increased as the number of collected lengths for which sex was determined increased (Figures 2 - 4). 
+In general, for each region investigated the mean of the replicated sex-specific effective sample size for length composition increased as the number of collected lengths for which sex was determined increased (Figures \@ref(fig:goa-length) - \@ref(fig:goa-length-flats)). 
 For a number of species, the subsampling case of 175 sexed lengths was nearly equivalent to the base case (in which non subsampling occurred), indicating that for these species around 175 or less lengths have been subsequently sexed historically.
 There were notable exceptions, including ***** (*I think EBS pollock and maybe a couple others will fall in here*), indicating that in the historical surveys there were a number of hauls in which more that 175 length collections were subsequently sexed. 
 For nearly all the species investigated (*or all, will need to see results*), the mean of the replicated effective sample size for the total length composition (the sum of the female, male, and unsexed population at length estimates) were insensitive to the sexed subsampling cases. (*Any exceptions to previous statement here*)
@@ -252,6 +252,14 @@ Table XX. Number of historical samples that would have moved to the ‘unsexed�
 knitr::include_graphics(here::here('figs', 'length_flowchart.png'))
 ```
 
+```{r goa-length, fig.cap="Replicated length composition effective sample size for females, males, and total (sum of females, males, and unsexed) for selected species in the Gulf of Alaska for each sexed subsample size case (including the base case where no subsampling for sexing occurred)."}
+knitr::include_graphics(here::here('figs', 'ess_length_goa.png'))
+```
+
+
+```{r goa-length-flats, fig.cap="Replicated length composition effective sample size for females, males, and total (sum of females, males, and unsexed) for selected flatfish species in the Gulf of Alaska for each sexed subsample size case (including the base case where no subsampling for sexing occurred)."}
+knitr::include_graphics(here::here('figs', 'ess_length_goa_flats.png'))
+```
 
 
 
