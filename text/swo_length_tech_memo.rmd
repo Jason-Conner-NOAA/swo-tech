@@ -60,8 +60,8 @@ source(here::here('R', "render_toc.R"))
 
 On the Alaska Fishery Science Center bottom trawl surveys length frequency data are collected and sex is subsequently determined from a subset of these collected data so that sex-specific length composition data are available for assessment of groundfish stocks. 
 Determining sex from the length frequency data has resulted in acute and repetitive stress injuries of survey staff, and these injuries have become increasingly common. 
-In December 2021 a working group was formed (the Survey Workflow Optimization working group) to evaluate the effect on length composition uncertainty of reducing the amount of length frequency data for which sex is determined from historical levels in the bottom trawl surveys. 
-Over the spring of 2022 the working group developed a bootstrap-simulation approach that determined the amount of uncertainty gained by reducing the amount of length frequency data for which sex was subsequently determined. 
+In December 2021, a working group was formed (the Survey Workflow Optimization working group) to evaluate the effect of reducing the amount of length frequency data for which sex is determined from historical levels in the bottom trawl surveys on length composition uncertainty. 
+The working group developed a bootstrap-simulation approach that determined the amount of uncertainty gained by reducing the amount of length frequency data for which sex was subsequently determined over the spring of 2022. 
 It was shown that the length composition input sample size was reduced by 25% or less compared to the input sample size for the full historical data sets for subsampling levels of 100 fish per haul for which sex was subsequently determined. 
 Upon meeting with stock assessment authors the joint recommendation between the working group and assessment authors to the survey staff was to limit length frequency data for which sex is subsequently determined to 100 subsampled fish per haul.
 
@@ -83,7 +83,7 @@ This length measurement process is repeated over 100,000 times in a given survey
 Each year, this work flow results in acute and repetitive stress injuries, some requiring medical interventions and claims to the U.S. Office of Workers' Compensation Programs. 
 Another consequence of the intensity of this work are unrecoverable errors in the observed data; as fatigue or injuries accumulate during the course of field work, so do data collection errors (e.g. failure to properly encode length measurements with the correct species or sex or incorrect identification of sex), despite extensive *in situ* quality assurance protocols.
 
-In December of 2021 an AFSC working group was formed (the ‘Survey Workload Optimization’ working group, SWO) to evaluate the impacts of reducing sampling for sex within the length frequency data collections due to repetitive motion injuries that have been occuring on the bottom trawl surveys.
+In December of 2021, an AFSC working group was formed (the ‘Survey Workload Optimization’ working group, SWO) to evaluate the impacts of reducing sampling for sex within the length frequency data collections due to repetitive motion injuries that have been occuring on the bottom trawl surveys.
 From the stock assessment perspective, the primary concern when reducing the sampling for sex within the length frequency data collections was the impact on the uncertainty in subsequent sex-specific length composition data. 
 This is of particular importance to stock assessments that are sex-specific, such as the flatfish assessments conducted by AFSC. 
 To that end, we evaluated the impact of reducing sampling for sex within the length frequency data collection to answer two questions: (1) what is the impact of reducing sampling for sex on the uncertainty in the sex-specific length composition?
@@ -199,7 +199,7 @@ We also ran the bootstrap-simulation for the historical number of sexed length f
 We ran the bootstrap-simulation for 500 iterations, which was a level for which the variability in population abundance at length results had stabilized, and applied the bootstrap-simulation to the most recent 3 years of the respective bottom trawl surveys, which were the most indicative of the current sampling levels. 
 The bootstrap-simulation was developed in R [@Rcore] and is available via GitHub as an R package (https://github.com/BenWilliams-NOAA/swo).
 
-## Computing effective sand input ample size
+## Computing effective and input sample size
 Effective sample size, as introduced by @Mcallister1997, is a statistic that can evaluate the level of intra-haul correlation in composition samples that are collected on a survey (whether from age or length frequency collections). 
 It is also a statistic that can evaluate the amount of uncertainty in an estimated composition compared to an observed composition. 
 Effective sample size is given by:
