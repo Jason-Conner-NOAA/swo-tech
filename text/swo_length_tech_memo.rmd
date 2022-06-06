@@ -275,6 +275,9 @@ Table XX. Number of historical samples that would have moved to the â€˜unsexedâ€
 ```{r length, fig.cap="Bootstrap-simulation flow chart, the steps refer to the order of operations as described in the *Bootstrap-simulation framework* section.", fig.alt="Flowchart diagram of bootstrap-simulation"}
 knitr::include_graphics(here::here('figs', 'length_flowchart.png'))
 ```
+```{r bs-length, fig.cap="Replicated length composition effective sample size for females, males, and total (sum of females, males, and unsexed) for selected species in the Eastern Bering Sea for each sexed subsample size case (including the base case where no subsampling for sexing occurred)."}
+knitr::include_graphics(here::here('figs', 'ess_length_bs.png'))
+```
 
 ```{r ai-length, fig.cap="Replicated length composition effective sample size for females, males, and total (sum of females, males, and unsexed) for selected species in the Aleutian Islands for each sexed subsample size case (including the base case where no subsampling for sexing occurred)."}
 knitr::include_graphics(here::here('figs', 'ess_length_ai.png'))
@@ -288,9 +291,16 @@ knitr::include_graphics(here::here('figs', 'ess_length_goa.png'))
 ```{r goa-length-flats, fig.cap="Replicated length composition effective sample size for females, males, and total (sum of females, males, and unsexed) for selected flatfish species in the Gulf of Alaska for each sexed subsample size case (including the base case where no subsampling for sexing occurred)."}
 knitr::include_graphics(here::here('figs', 'ess_length_goa_flats.png'))
 ```
+```{r bs-iss, fig.cap="Length composition input sample size for females, males, and total (sum of female, male, and unsexed) of selected species in the Eastern Bering Sea for each sexed subsample size case (including the base case where no subsampling for sexing occurred)."}
+knitr::include_graphics(here::here('figs', 'iss_length_bs.png'))
+```
 
 ```{r ai-iss, fig.cap="Length composition input sample size for females, males, and total (sum of female, male, and unsexed) of selected species in the Aleutian Islands for each sexed subsample size case (including the base case where no subsampling for sexing occurred)."}
 knitr::include_graphics(here::here('figs', 'iss_length_ai.png'))
+```
+
+```{r bs-iss-prop, fig.cap="Proportion of base length composition input sample size for each of the sexed subsample size cases investigated for selected species in the Eastern Bering Sea."}
+knitr::include_graphics(here::here('figs', 'prop_iss_bs.png'))
 ```
 
 ```{r ai-iss-prop, fig.cap="Proportion of base length composition input sample size for each of the sexed subsample size cases investigated for selected species in the Aleutian Islands."}
