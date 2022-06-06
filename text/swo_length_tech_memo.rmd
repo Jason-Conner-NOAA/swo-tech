@@ -99,9 +99,15 @@ Some species’ gonads are difficult to successfully distinguish in the field, a
 
 Survey length subsampling protocols have been altered at least once during the time series. 
 Prior to an analysis of length frequency sample size [@Gerritsen2007], AFSC trawl survey standard operating procedures directed scientists to collect a minimum of 200 length specimens per species where more than 200 were in a trawl sample. 
-In the EBS survey, the principles suggested by [@Gerritsen2007], specifically that 10 random length specimens should be sampled for each size bin range of a sample, have been applied to some species, although with varying consistency. 
+In the EBS survey, the principles suggested by [@Gerritsen2007], specify that 10 random length specimens should be sampled for each size bin range of a sample, have been applied to some species, although with varying consistency. 
 
 **[Historical sample size para - including table of avg of total sample size over the most recent 3 years and average sample size per haul by sex category, could include Meaghan’s figures from presentation too]**
+## Historical length sampling 
+The average total number lengths sampled over the past three surveys is summarized for each survey and species of interest in ... The species with the greatest average total number of lengths sampled varied by survey. The top five species for the eastern Bering Sea shelf bottom trawl survey are walleye pollock, yellowfin sole, northern rock sole, flathead sole, and arrowtooth flounder; POP, northern rock sole, northern rockfish, walleye pollock, and arrowtooth flounder for the Aleutian Islands bottom trawl survey; and arrowtooth flounder, POP, walleye pollock, flathead sole, and rex sole for the Gulf of Alaska bottom trawl survey.
+
+
+The number of sampled lengths per haul for species of interest are summarized in (Figures \@ref(fig:ai-samples-per-haul) - \@ref(fig:goa-samples-per-haul)). All summarize the most recent six years of data. The species with the greatest number of hauls exceeding the sampling target of 200 samples are walleye pollock, yellowfin sole, and northern rock sole in the eastern Bering Sea; POP, northrn rockfish, and walleye pollock in the Aleutian Isalnds; and POP, arrowtooth flounder, and walleye pollock in the Gulf of Alaska.
+
 
 ## Expanding length frequency to population abundance at length
 Length frequency samples collected by the AFSC bottom trawl surveys are expanded by catch and stratum area to obtain estimates of population abundance at length. 
