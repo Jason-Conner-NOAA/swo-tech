@@ -103,11 +103,7 @@ In the EBS survey, the principles suggested by [@Gerritsen2007], specify that 10
 
 **[Historical sample size para - including table of avg of total sample size over the most recent 3 years and average sample size per haul by sex category, could include Meaghan’s figures from presentation too]**
 ## Historical length sampling 
-The average total number lengths sampled over the past three surveys is summarized for each survey and species of interest in ... The species with the greatest average total number of lengths sampled varied by survey. The top five species for the eastern Bering Sea shelf bottom trawl survey are walleye pollock, yellowfin sole, northern rock sole, flathead sole, and arrowtooth flounder; POP, northern rock sole, northern rockfish, walleye pollock, and arrowtooth flounder for the Aleutian Islands bottom trawl survey; and arrowtooth flounder, POP, walleye pollock, flathead sole, and rex sole for the Gulf of Alaska bottom trawl survey.
-
-
-The number of sampled lengths per haul for species of interest are summarized in (Figures \@ref(fig:ai-samples-per-haul) - \@ref(fig:goa-samples-per-haul)). All summarize the most recent six years of data. The species with the greatest number of hauls exceeding the sampling target of 200 samples are walleye pollock, yellowfin sole, and northern rock sole in the eastern Bering Sea; POP, northrn rockfish, and walleye pollock in the Aleutian Isalnds; and POP, arrowtooth flounder, and walleye pollock in the Gulf of Alaska.
-
+The database (i.e. RACEBASE) was queried using the sumfish package in Program R (*Add Conner reference*). Raw length sample data were summarized to determine the average number of sex-specific and unsexed length samples over the past three years by survey and species. Additionally we summarized the number of sex-specific lengths and total number of lengths collected per haul over time.  
 
 ## Expanding length frequency to population abundance at length
 Length frequency samples collected by the AFSC bottom trawl surveys are expanded by catch and stratum area to obtain estimates of population abundance at length. 
@@ -228,11 +224,16 @@ Herein, when we use the term ‘effective sample size’ we are referring to the
 # Results 
 
 [Para on reduction in historical sampling based on sub-sample sizes, i.e., the avg number of lengths that could be saved, Table XX]
+The average total number lengths sampled over the past three surveys is summarized for each survey and species of interest in ... The species with the greatest average total number of lengths sampled varied by survey. The top five species for the eastern Bering Sea shelf bottom trawl survey are walleye pollock, yellowfin sole, northern rock sole, flathead sole, and arrowtooth flounder; POP, northern rock sole, northern rockfish, walleye pollock, and arrowtooth flounder for the Aleutian Islands bottom trawl survey; and arrowtooth flounder, POP, walleye pollock, flathead sole, and rex sole for the Gulf of Alaska bottom trawl survey.
+
+
+The number of sampled lengths per haul for species of interest are summarized in (Figures \@ref(fig:ai-samples-per-haul) - \@ref(fig:goa-samples-per-haul)). All summarize the most recent six years of data. The species with the greatest number of hauls exceeding the sampling target of 200 samples are walleye pollock, yellowfin sole, and northern rock sole in the eastern Bering Sea; POP, northrn rockfish, and walleye pollock in the Aleutian Isalnds; and POP, arrowtooth flounder, and walleye pollock in the Gulf of Alaska.
+
 
 In general, for each region investigated the mean of the replicated sex-specific effective sample size for length composition increased as the number of collected lengths for which sex was determined increased (Figures \@ref(fig:goa-length) - \@ref(fig:goa-length-flats)). 
 For a number of species, the subsampling case of 175 sexed lengths was nearly equivalent to the base case (in which non subsampling occurred), indicating that for these species around 175 or less lengths have been subsequently sexed historically.
 There were notable exceptions, including ***** (*I think EBS pollock and maybe a couple others will fall in here*), indicating that in the historical surveys there were a number of hauls in which more that 175 length collections were subsequently sexed. 
-For nearly all the species investigated (*or all, will need to see results*), the mean of the replicated effective sample size for the total length composition (the sum of the female, male, and unsexed population at length estimates) were insensitive to the sexed subsampling cases. (*Any exceptions to previous statement here*)
+For nearly all the species investigated (*or all, will need to see results*), the mean of the replicated effective sample size for the total length composition (the sum of the female, male, and unsexed population at length estimates) were insensitive to the sexed subsampling cases. (*Any exceptions to previous statement here? This seems to hold for all species and surveys*)
 
 Results of the sex-specific input sample size for length composition also mimicked the results of the replicated effective sample size for each region; in general, as the sexed subsampling level increased the input sample size increased (Figures 5-7). 
 *Exceptions were…* 
@@ -240,16 +241,16 @@ The magnitude of input sample size was sensitive to the species and the survey y
 In general, 
 larger input sample sizes were associated with species who were sampled more frequently. 
 The effect of the survey year on the input sample size could also be associated with the sample size for that year, but would also be related to the structure of the length composition (i.e., uni- or multi-modal length compositions). 
-Sex-specific input sample sizes for length frequency ranged from around 50 to 750. 
+Sex-specific input sample sizes for length frequency ranged from around 50 to 750 for the Aleutian Islands bottom trawl survey and 500 to 2000 for the EBS shelf bottom trawl survey. 
 Similar to the results of the replicated effective sample size, the input sample size for the total length composition remained generally unchanged across the sexed subsampling cases investigated. 
-Total input sample size for length were species-specific, with values around 50 for less frequently sampled species to 1250 for more frequently sampled species.
+Total input sample size for length were species-specific, with values around 50 for less frequently sampled species to 1250 and 3500 for more frequently sampled species in the ALeutian Islands and eastern Bering Sea, respectively.
 
 Compared to the base input sample size, the proportion of the base input sample size for each sexed subsampling case was similar for females and males, but were different across species and survey years (Figures 8-10). 
-The sex-specific proportion of base input sample size increased as the sexed subsample size increased, and for the smallest sexed subsampling case the sex-speicic input sample size was less than 0.5 of the base input sample size for some species.
+The sex-specific proportion of base input sample size increased as the sexed subsample size increased, and for the smallest sexed subsampling case the sex-specific input sample size was less than 0.5 of the base input sample size for some species.
 Again, the proportion of the base input sample size for the total length composition was relatively unchanged across the sexed subsampling cases. 
 *Exceptions were…*
-For a number of species and survey years the sex-specific proportion for the sexed subsampling cases were similar to the base input sample size, particularly for sexed subsampling sizes greater than 100. 
-In general, the proportion of the sexed subsample size of 100 was greater than 0.75 of the base input sample size.
+For a number of species and survey years the sex-specific proportion for the sexed subsampling cases were similar to the base input sample size, particularly for sexed subsampling sizes greater than 100. Notable exceptions were EBS walleye pollock, EBS Pacific cod in 2019, and EBS flathead sole in 2018. (*Everyone agree with this?*)  
+In general, the proportion of the sexed subsample size of 100 was greater than 0.75 of the base input sample size (*exceptions are EBS and AI flathead sole in 2018, EBS arrowtooth flounder 2018 and 2019, EBS Pcod in 2019, and EBS walleye pollock*).
 
 # Discussion
 [Cost-benefit para]
