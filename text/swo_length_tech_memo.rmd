@@ -108,7 +108,7 @@ The most frequently sampled species within each survey were then selected to be 
 
 ## Expanding length frequency to population abundance at length
 Length frequency samples collected by the AFSC bottom trawl surveys are expanded by catch and stratum area to obtain estimates of population abundance at length. 
-This is often referred to as the ‘first stage expansion’ and is a common method to obtain population estimates at length from area-swept survey data [e.g., @Ailloud2019]. 
+This is often referred to as the ‘first stage expansion’ and is a common method to obtain population estimates at length from area-swept survey data [e.g., @Ailloud2019, @Miller2006]. 
 Population abundance at length are computed for three sex categories: males, females, and unsexed at the stratum level, which are then summed across stratum to obtain the population abundance at length for the management-scale region (i.e., BS, AI, or GOA), these can also be summed to any sub-region level.
 
 In the first step of this process we compute the overall population numbers in year-*y* within stratum-*st* ($\hat{N}_{st,y}$) with:
@@ -197,7 +197,7 @@ In this bootstrap-simulation, the number of lengths in a given haul must be less
 The bootstrap-simulation then repeated steps 1-3 iteratively for each sex sub-sample size determined in step 1, providing iterated sex-specific population abundance at length that was then compared to the historical sex-specific population abundance at length determined by the bottom trawl surveys.
 
 We applied the bootstrap-simulation to species that were most commonly captured in the EBS, AI, and GOA bottom trawl surveys (Table \@ref(tab:tbl1)). 
-The subsample levels for subsequent sex determination from the length frequency collections that we evaluated were 50, 75, 100, 125, 150, and 175 samples. 
+The subsample levels that we evaluated for subsequent sex determination from the length frequency collections were 50, 75, 100, 125, 150, and 175 samples. 
 We also ran the bootstrap-simulation for the historical number of sexed length frequency collections without subsetting in order to compare the base level uncertainty to the increase in uncertainty gained through subsampling. 
 We ran the bootstrap-simulation for 500 iterations, which was a level for which the variability in population abundance at length results had stabilized, and applied the bootstrap-simulation to the most recent 3 years of the respective bottom trawl surveys, which were the most indicative of the current sampling levels. 
 The bootstrap-simulation was developed in R [@Rcore] and is available via GitHub as an R package (https://github.com/BenWilliams-NOAA/swo).
@@ -225,7 +225,9 @@ Herein, when we use the term ‘effective sample size’ we are referring to the
 # Results 
 
 The species with the greatest average total number of lengths sampled varied by the regional-specific surveys (Table \@ref(tab:tbl1)). 
-The top five species for the eastern Bering Sea shelf bottom trawl survey were walleye pollock, yellowfin sole, northern rock sole, flathead sole, and arrowtooth flounder; Pacific ocean perch, northern rockfish, walleye pollock, arrowtooth flounder, and Atka mackerel for the Aleutian Islands bottom trawl survey; and arrowtooth flounder, Pacific ocean perch, walleye pollock, flathead sole, and rex sole for the Gulf of Alaska bottom trawl survey. These trends were similar within years as well (Table \@ref(tab:tbl2)).The species most frequently sampled for lengths across all the surveys was walleye pollock in the eastern Bering Sea survey, with *1.34* times as many samples as the next most frequently sampled species across all the surveys (arrowtooth flounder in the Gulf of Alaska).
+The top five species for the eastern Bering Sea shelf bottom trawl survey were walleye pollock, yellowfin sole, northern rock sole, flathead sole, and arrowtooth flounder; Pacific ocean perch, northern rockfish, walleye pollock, arrowtooth flounder, and Atka mackerel for the Aleutian Islands bottom trawl survey; and arrowtooth flounder, Pacific ocean perch, walleye pollock, flathead sole, and rex sole for the Gulf of Alaska bottom trawl survey. 
+These trends were similar within years as well (Table \@ref(tab:tbl2)). 
+The species most frequently sampled for lengths across all the surveys was walleye pollock in the eastern Bering Sea survey, with nearly 50% more samples in some years as the next most frequently sampled species (arrowtooth flounder in the Gulf of Alaska).
 
 The number of sampled lengths per haul for species of interest are summarized in (Figures \@ref(fig:ai-samples-per-haul) - \@ref(fig:goa-samples-per-haul)). 
 All summarize the most recent *three* years of data. 
@@ -276,14 +278,7 @@ knitr::kable(vroom::vroom(here::here('tables', 'avg3yr_byAreaSP_rep.csv')), capt
 # Copying Pete here - - putting this in here to be formatted later - tried some a bit :/
 knitr::kable(vroom::vroom(here::here('tables', 'annLen_byAreaSpecies_rep.csv')), caption = "Total annual length frequency samples for the most recent three surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lccc'), format.args = list(big.mark = ",", scientific = FALSE))
 ```
-\newpage
-
-```{r tbl1}
-# putting this in here to be formatted later - tried some a bit :/
-#knitr::kable(vroom::vroom(here::here('tables', 'table1.csv')), caption = "Average total length frequency samples from the most recent three surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lccc'), format.args = list(big.mark = ",", scientific = FALSE))
-```
-
-\newpage
+<!-- \newpage -->
 
 ```{r tbl3}
 # putting this in here to be formatted later
