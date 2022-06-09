@@ -224,20 +224,20 @@ Herein, when we use the term ‘effective sample size’ we are referring to the
 
 # Results 
 
-The species with the greatest average total number of lengths sampled varied by the regional-specific surveys (Table \@ref(tab:tbl1)). 
+The species with the greatest average total number of lengths sampled varied by the regional-specific surveys (Tables \@ref(tab:tbl1) - \@ref(tab:tbl3)). 
 The top five species for the eastern Bering Sea shelf bottom trawl survey were walleye pollock, yellowfin sole, northern rock sole, flathead sole, and arrowtooth flounder; Pacific ocean perch, northern rockfish, walleye pollock, arrowtooth flounder, and Atka mackerel for the Aleutian Islands bottom trawl survey; and arrowtooth flounder, Pacific ocean perch, walleye pollock, flathead sole, and rex sole for the Gulf of Alaska bottom trawl survey. 
-These trends were similar within years as well (Table \@ref(tab:tbl2)). 
-The species most frequently sampled for lengths across all the surveys was walleye pollock in the eastern Bering Sea survey, with nearly 50% more samples in some years as the next most frequently sampled species (arrowtooth flounder in the Gulf of Alaska).
+These trends were similar within years as well. 
+The species most frequently sampled for lengths across all the surveys was walleye pollock in the eastern Bering Sea survey (Table \@ref(tab:tbl2)), with nearly 50% more samples in some years as the next most frequently sampled species (arrowtooth flounder in the Gulf of Alaska, Table  \@ref(tab:tbl3)).
 
 The number of sampled lengths per haul for species of interest are summarized in (Figures \@ref(fig:ai-samples-per-haul) - \@ref(fig:goa-samples-per-haul)). 
 All summarize the most recent *three* years of data. 
 The species with the greatest number of hauls exceeding the sampling target of 200 samples are walleye pollock, yellowfin sole, and northern rock sole in the eastern Bering Sea; Pacific ocean perch, northern rockfish, and walleye pollock in the Aleutian Islands; and Pacific ocean perch, arrowtooth flounder, and walleye pollock in the Gulf of Alaska. 
-*maybe a note on ebs pollock compared to other species to set up for reasons behind different results*.
+*maybe a note on ebs pollock compared to other species to set up for reasons behind different results*. 
 
 In general, for each region investigated the mean of the replicated sex-specific effective sample size for length composition increased as the number of collected lengths for which sex was determined increased (Figures \@ref(fig:ai-length) - \@ref(fig:goa-length-flats)). 
 For a number of species, the subsampling case of 175 sexed lengths was nearly equivalent to the base case (in which non subsampling occurred), indicating that for these species around 175 or less lengths have been subsequently sexed historically.
 There were notable exceptions to the subsampling case of 175 being similar to the base case, indicating that in the historical surveys there were a number of hauls in which more that 175 length collections were subsequently sexed. 
-These exceptions include arrowtooth flounder in the Gulf of Alaska (\@ref(fig:goa-length-flats)) and eastern Bering Sea (\@ref(fig:bs-length)), and walleye pollock in the eastern Bering Sea (\@ref(fig:bs-length)), with the most extremem difference resulting for eastern Bering Sea walleye pollock. 
+These exceptions include arrowtooth flounder in the Gulf of Alaska (\@ref(fig:goa-length-flats)) and eastern Bering Sea (\@ref(fig:bs-length)), and walleye pollock in the eastern Bering Sea (\@ref(fig:bs-length)), with the most extreme difference resulting for eastern Bering Sea walleye pollock. 
 For all the species and regions investigated the mean of the replicated effective sample size for the total length composition (the sum of the female, male, and unsexed population at length estimates) were insensitive to the sexed subsampling cases. 
 
 Results of the sex-specific input sample size for length composition also mimicked the results of the replicated effective sample size for each region; as the sexed subsampling level increased the input sample size increased (Figures \@ref(fig:ai-iss) - \@ref(fig:goa-iss-flats)). 
@@ -270,19 +270,26 @@ Other species for which input sample sizes for sexed subsample sizes greater tha
 # Tables 
 ```{r tbl1}
 # Copying Pete here - - putting this in here to be formatted later - tried some a bit :/
-knitr::kable(vroom::vroom(here::here('tables', 'avg3yr_byAreaSP_rep.csv')), caption = "Average total length frequency samples from the most recent three surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lccc'), format.args = list(big.mark = ",", scientific = FALSE))
+knitr::kable(vroom::vroom(here::here('tables', 'ai_samples.csv')), caption = "Total length frequency samples from the most recent three Aleutian Islands surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lcccc'), format.args = list(big.mark = ",", scientific = FALSE))
 ```
 \newpage
 
 ```{r tbl2}
 # Copying Pete here - - putting this in here to be formatted later - tried some a bit :/
-knitr::kable(vroom::vroom(here::here('tables', 'annLen_byAreaSpecies_rep.csv')), caption = "Total annual length frequency samples for the most recent three surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lccc'), format.args = list(big.mark = ",", scientific = FALSE))
+knitr::kable(vroom::vroom(here::here('tables', 'ebs_samples.csv')), caption = "Total length frequency samples from the most recent three eastern Bering Sea surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lcccc'), format.args = list(big.mark = ",", scientific = FALSE))
 ```
-<!-- \newpage -->
+\newpage
 
 ```{r tbl3}
+# Copying Pete here - - putting this in here to be formatted later - tried some a bit :/
+knitr::kable(vroom::vroom(here::here('tables', 'goa_samples.csv')), caption = "Total length frequency samples from the most recent three Gulf of Alaska surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lcccc'), format.args = list(big.mark = ",", scientific = FALSE))
+```
+\newpage
+
+
+```{r tbl4}
 # putting this in here to be formatted later
-knitr::kable(vroom::vroom(here::here('tables', 'table2.csv')), caption = "Range of average reduction in sexed length frequency samples for the sex sub-sampling cases investigated from the most recent three surveys.", align = c('lccc'), format.args = list(big.mark = ",", scientific = FALSE))
+knitr::kable(vroom::vroom(here::here('tables', 'avg_saved_range.csv')), caption = "Range of average reduction in sexed length frequency samples for the sex sub-sampling cases investigated from the most recent three surveys.", align = c('lccc'))
 ```
 
 \newpage
