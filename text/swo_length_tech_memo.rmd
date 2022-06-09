@@ -225,12 +225,12 @@ Herein, when we use the term ‘effective sample size’ we are referring to the
 # Results 
 
 The species with the greatest average total number of lengths sampled varied by the regional-specific surveys (Table \@ref(tab:tbl1)). 
-The top five species for the eastern Bering Sea shelf bottom trawl survey were walleye pollock, northern rock sole, yellowfin sole,  flathead sole, and arrowtooth flounder; Pacific ocean perch, northern rockfish, walleye pollock, arrowtooth flounder, and Atka mackerel for the Aleutian Islands bottom trawl survey; and arrowtooth flounder, Pacific ocean perch, walleye pollock, flathead sole, and rex sole for the Gulf of Alaska bottom trawl survey. 
+The top five species for the eastern Bering Sea shelf bottom trawl survey were walleye pollock, yellowfin sole, northern rock sole, flathead sole, and arrowtooth flounder; Pacific ocean perch, northern rockfish, walleye pollock, arrowtooth flounder, and Atka mackerel for the Aleutian Islands bottom trawl survey; and arrowtooth flounder, Pacific ocean perch, walleye pollock, flathead sole, and rex sole for the Gulf of Alaska bottom trawl survey. 
 The species most frequently sampled for lengths across all the surveys was walleye pollock in the eastern Bering Sea survey, with *x* times as many samples as the next most frequently sampled species across all the surveys (arrowtooth flounder in the Gulf of Alaska).
 
 The number of sampled lengths per haul for species of interest are summarized in (Figures \@ref(fig:ai-samples-per-haul) - \@ref(fig:goa-samples-per-haul)). 
-All summarize the most recent *six* years of data. 
-The species with the greatest number of hauls exceeding the sampling target of 200 samples are walleye pollock, yellowfin sole, and northern rock sole in the eastern Bering Sea; Pacific ocean perch, northrn rockfish, and walleye pollock in the Aleutian Islands; and Pacific ocean perch, arrowtooth flounder, and walleye pollock in the Gulf of Alaska. 
+All summarize the most recent *three* years of data. 
+The species with the greatest number of hauls exceeding the sampling target of 200 samples are walleye pollock, yellowfin sole, and northern rock sole in the eastern Bering Sea; Pacific ocean perch, northern rockfish, and walleye pollock in the Aleutian Islands; and Pacific ocean perch, arrowtooth flounder, and walleye pollock in the Gulf of Alaska. 
 *maybe a note on ebs pollock compared to other species to set up for reasons behind different results*.
 
 In general, for each region investigated the mean of the replicated sex-specific effective sample size for length composition increased as the number of collected lengths for which sex was determined increased (Figures \@ref(fig:ai-length) - \@ref(fig:goa-length-flats)). 
@@ -267,15 +267,26 @@ Other species for which input sample sizes for sexed subsample sizes greater tha
 \newpage
 
 # Tables 
+```{r tbl1}
+# Copying Pete here - - putting this in here to be formatted later - tried some a bit :/
+knitr::kable(vroom::vroom(here::here('tables', 'avg3yr_byAreaSP_rep.csv')), caption = "Average total length frequency samples from the most recent three surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lccc'), format.args = list(big.mark = ",", scientific = FALSE))
+```
+\newpage
+
+```{r tbl2}
+# Copying Pete here - - putting this in here to be formatted later - tried some a bit :/
+knitr::kable(vroom::vroom(here::here('tables', 'annLen_byAreaSpecies_rep.csv')), caption = "Total annual length frequency samples for the most recent three surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lccc'), format.args = list(big.mark = ",", scientific = FALSE))
+```
+\newpage
 
 ```{r tbl1}
 # putting this in here to be formatted later - tried some a bit :/
-knitr::kable(vroom::vroom(here::here('tables', 'table1.csv')), caption = "Average total length frequency samples from the most recent three surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lccc'), format.args = list(big.mark = ",", scientific = FALSE))
+#knitr::kable(vroom::vroom(here::here('tables', 'table1.csv')), caption = "Average total length frequency samples from the most recent three surveys for the species evaluated in the bootstrap-simulation for reduction in sexed length-frequency collections.", align = c('lccc'), format.args = list(big.mark = ",", scientific = FALSE))
 ```
 
 \newpage
 
-```{r tbl2}
+```{r tbl3}
 # putting this in here to be formatted later
 knitr::kable(vroom::vroom(here::here('tables', 'table2.csv')), caption = "Range of average reduction in sexed length frequency samples for the sex sub-sampling cases investigated from the most recent three surveys.", align = c('lccc'), format.args = list(big.mark = ",", scientific = FALSE))
 ```
@@ -289,15 +300,15 @@ knitr::kable(vroom::vroom(here::here('tables', 'table2.csv')), caption = "Range 
 knitr::include_graphics(here::here('figs', 'length_flowchart.png'))
 ```
 
-```{r ai-samples-per-haul, fig.cap="Number of length samples collected per haul for the most recent three years of the Aleutian Islands bottom trawl survey"}
+```{r ai-samples-per-haul, fig.cap="Number of sexed length samples collected per haul compared to catch per haul for the most recent three years of the Aleutian Islands bottom trawl survey. The red dashed line represents the target sample size."}
 # knitr::include_graphics(here::here('figs', 'ai_samples_per_haul.png'))
 ```
 
-```{r bs-samples-per-haul, fig.cap="Number of length samples collected per haul for the most recent three years of the eastern Bering Sea bottom trawl survey"}
+```{r bs-samples-per-haul, fig.cap="Number of sexed length samples collected per haul compared to catch per haul for the most recent three years of the eastern Bering Sea bottom trawl survey. The red dashed line represents the target sample size."}
 # knitr::include_graphics(here::here('figs', 'bs_samples_per_haul.png'))
 ```
 
-```{r goa-samples-per-haul, fig.cap="Number of length samples collected per haul for the most recent three years of the Gulf of Alaska bottom trawl survey"}
+```{r goa-samples-per-haul, fig.cap="Number of sexed length samples collected per haul compared to catch per haul for the most recent three years of the Gulf of Alaska bottom trawl survey. The red dashed line represents the target sample size."}
 # knitr::include_graphics(here::here('figs', 'goa_samples_per_haul.png'))
 ```
 
