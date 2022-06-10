@@ -217,8 +217,9 @@ where $E_c$ is the estimated proportion for category-*c* (which can be either ag
 In this bootstrap-simulation the underlying length composition derived from the historical bottom trawl surveys was treated as the observed proportions $O_c$ in equation \@ref(eq:eqn7). 
 For each iteration of the bootstrap simulation for a determined sex sub-sample size we computed a sex-specific estimated proportion ($E_c$) that was then compared to the underlying historical sex-specific length composition (the effective sample size for the total length composition, as the sum of population abundance at length, was also computed). 
 Thus, across each iteration of the bootstrap simulation we computed an effective sample size that indicated the amount of increased uncertainty that was caused by sub-sampling sexed length frequency data. 
-To summarize the effective sample sizes across iterations we used the harmonic mean, which has been shown to reduce bias in recovering the true sample size in simulations for a multinomial distribution and due to this reduced bias, the harmonic mean has also been recommended to be used to determine the ‘input sample size’ that is then used in stock assessment models to fit compositional data [@Stewart2014]. 
-Herein, when we use the term ‘effective sample size’ we are referring to the effective sample sizes that were computed for each iteration of the bootstrap simulation, when we use the term ‘input sample size’ we are referring to the harmonic mean of the iterated effective sample sizes.
+To summarize effective sample size across iterations we used the harmonic mean, which has been shown to reduce bias in recovering the true sample size in simulations for a multinomial distribution. 
+Due to this reduction in bias the harmonic mean has also been recommended to determine the ‘input sample size’ that is used in stock assessment models to fit compositional data [@Stewart2014]. 
+Herein, when we use the term ‘effective sample size’ we are referring to the effective sample sizes that were computed for each iteration of the bootstrap-simulation, when we use the term ‘input sample size’ we are referring to the harmonic mean of the iterated effective sample sizes.
 
 
 
