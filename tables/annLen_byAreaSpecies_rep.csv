@@ -1,17 +1,72 @@
-Species name,AI-2014,AI-2016,AI-2018,EBS-2017,EBS-2018,EBS-2019,GOA-2017,GOA-2019,GOA-2021
-Alaska plaice,--,--,--,"8,347","14,030","9,080",--,--,--
-arrowtooth flounder,"10,201","9,166","10,225","11,679","18,756","14,349","35,219","38,673","36,429"
-Atka mackerel,"9,999","6,080","7,301",--,--,--,646,45,194
-flathead sole,"4,945","3,904","4,941","19,238","26,837","20,993","16,086","14,272","15,321"
-Greenland turbot,--,--,--,373,259,166,--,--,--
-Kamchatka flounder,--,--,--,"2,654","2,743","1,966",--,--,--
-northern rock sole,--,--,--,"22,466","28,397","23,231","4,776","3,297","2,960"
-northern rockfish,"14,738","15,116","14,640",--,--,--,"2,570","2,237","2,088"
-Pacific cod,"4,541","6,500","6,093","11,827","11,317","11,288","2,601","3,745","3,999"
-Pacific ocean perch,"29,569","36,065","30,980",--,--,--,"20,710","26,270","22,801"
-rex sole,--,--,--,--,--,--,"10,374","13,168","15,033"
-sablefish,--,--,--,--,--,--,"4,599","8,743","9,055"
-shortspine thornyhead,"3,201","4,241","2,954",--,--,--,"10,376","10,154","10,132"
-southern rock sole,--,--,--,--,--,--,"5,986","6,878","8,661"
-walleye pollock,"10,300","9,112","12,972","49,037","56,799","42,795","13,782","16,476","23,218"
-yellowfin sole,--,--,--,"26,973","31,584","25,768",--,--,--
+"year","species_name","AI","EBS_SHELF","GOA"
+2014,"arrowtooth flounder",10212,NA,NA
+2014,"Atka mackerel",10162,NA,NA
+2014,"flathead sole",4962,NA,NA
+2014,"Kamchatka flounder",3188,NA,NA
+2014,"northern rock sole",10477,NA,NA
+2014,"northern rockfish",14884,NA,NA
+2014,"Pacific cod",4556,NA,NA
+2014,"Pacific ocean perch",30205,NA,NA
+2014,"walleye pollock",10305,NA,NA
+2016,"arrowtooth flounder",9166,NA,NA
+2016,"Atka mackerel",6080,NA,NA
+2016,"flathead sole",3904,NA,NA
+2016,"Kamchatka flounder",3768,NA,NA
+2016,"northern rock sole",10018,NA,NA
+2016,"northern rockfish",15116,NA,NA
+2016,"Pacific cod",6506,NA,NA
+2016,"Pacific ocean perch",36277,NA,NA
+2016,"walleye pollock",9142,NA,NA
+2017,"Alaska plaice",NA,8347,NA
+2017,"arrowtooth flounder",NA,11679,35219
+2017,"flathead sole",NA,19238,16086
+2017,"Greenland turbot",NA,373,NA
+2017,"Kamchatka flounder",NA,2654,NA
+2017,"northern rock sole",NA,22466,4776
+2017,"northern rockfish",NA,NA,2570
+2017,"Pacific cod",NA,11827,2601
+2017,"Pacific ocean perch",NA,NA,20710
+2017,"rex sole",NA,NA,10374
+2017,"sablefish",NA,NA,4599
+2017,"shortspine thornyhead",NA,NA,10376
+2017,"southern rock sole",NA,NA,5986
+2017,"walleye pollock",NA,49037,12790
+2017,"yellowfin sole",NA,26973,NA
+2018,"Alaska plaice",NA,14030,NA
+2018,"arrowtooth flounder",10225,18756,NA
+2018,"Atka mackerel",7423,NA,NA
+2018,"flathead sole",4941,26837,NA
+2018,"Greenland turbot",NA,259,NA
+2018,"Kamchatka flounder",3623,2743,NA
+2018,"northern rock sole",11767,28397,NA
+2018,"northern rockfish",14784,NA,NA
+2018,"Pacific cod",6107,11317,NA
+2018,"Pacific ocean perch",30992,NA,NA
+2018,"walleye pollock",12972,56799,NA
+2018,"yellowfin sole",NA,31584,NA
+2019,"Alaska plaice",NA,9080,NA
+2019,"arrowtooth flounder",NA,14349,38862
+2019,"flathead sole",NA,20993,14292
+2019,"Greenland turbot",NA,166,NA
+2019,"Kamchatka flounder",NA,1966,NA
+2019,"northern rock sole",NA,23231,3318
+2019,"northern rockfish",NA,NA,2237
+2019,"Pacific cod",NA,11288,3755
+2019,"Pacific ocean perch",NA,NA,26445
+2019,"rex sole",NA,NA,13205
+2019,"sablefish",NA,NA,8847
+2019,"shortspine thornyhead",NA,NA,10242
+2019,"southern rock sole",NA,NA,6924
+2019,"walleye pollock",NA,42795,15100
+2019,"yellowfin sole",NA,25768,NA
+2021,"arrowtooth flounder",NA,NA,36444
+2021,"flathead sole",NA,NA,15321
+2021,"northern rock sole",NA,NA,2960
+2021,"northern rockfish",NA,NA,2088
+2021,"Pacific cod",NA,NA,3999
+2021,"Pacific ocean perch",NA,NA,22802
+2021,"rex sole",NA,NA,15054
+2021,"sablefish",NA,NA,9173
+2021,"shortspine thornyhead",NA,NA,10269
+2021,"southern rock sole",NA,NA,8661
+2021,"walleye pollock",NA,NA,22427
