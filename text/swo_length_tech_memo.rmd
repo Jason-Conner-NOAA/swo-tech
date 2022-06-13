@@ -1,5 +1,5 @@
 ---
-title: "sub-sampling of length frequency to determine sex in Alaska Fishery Science Center bottom trawl surveys"
+title: "Sub-sampling of length frequency to determine sex in Alaska Fishery Science Center bottom trawl surveys"
 
 author:
   - name: Pete Hulson
