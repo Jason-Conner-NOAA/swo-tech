@@ -147,13 +147,13 @@ obs_hl=inner_join(num_ct,len_hl,by=c("year","species_code","surv","hauljoin"))
 obs_hl$prop=obs_hl$freq/obs_hl$num
 
 ebs=obs_hl[obs_hl$surv=="EBS_SHELF" & obs_hl$species_code %in% ebs_sp_code,]
-lfreq_num_plot(ebs,unique(ebs$surv),sex=FALSE,pname="total")
+lfreq_num_plot(ebs,tolower(unique(ebs$surv)),sex=FALSE,pname="total")
 
 ai=obs_hl[obs_hl$surv=="AI" & obs_hl$species_code %in% ai_sp_code,]
-lfreq_num_plot(ai,unique(ai$surv),sex=FALSE,pname="total")
+lfreq_num_plot(ai,tolower(unique(ai$surv)),sex=FALSE,pname="total")
 
 goa=obs_hl[obs_hl$surv=="GOA" & obs_hl$species_code %in% goa_sp_code,]
-lfreq_num_plot(goa,unique(goa$surv),sex=FALSE,pname="total")
+lfreq_num_plot(goa,tolower(unique(goa$surv)),sex=FALSE,pname="total")
 
 #Plot number of female+male lengths per haul by the total number caught
 len_hl_mf<-len_s %>% filter(sex!=3) %>%
@@ -163,13 +163,13 @@ len_hl_mf<-len_s %>% filter(sex!=3) %>%
 obs_hl_mf=inner_join(num_ct,len_hl_mf,by=c("year","species_code","surv","hauljoin"))
 
 ebs_mf=obs_hl_mf[obs_hl_mf$surv=="EBS_SHELF",]
-lfreq_num_plot(ebs_mf,unique(ebs_mf$surv),sex=FALSE,pname="MF")
+lfreq_num_plot(ebs_mf,tolower(unique(ebs_mf$surv)),sex=FALSE,pname="MF")
 
 ai_mf=obs_hl_mf[obs_hl_mf$surv=="AI",]
-lfreq_num_plot(ai_mf,unique(ai_mf$surv),sex=FALSE,pname="MF")
+lfreq_num_plot(ai_mf,tolower(unique(ai_mf$surv)),sex=FALSE,pname="MF")
 
 goa_mf=obs_hl_mf[obs_hl_mf$surv=="GOA",]
-lfreq_num_plot(goa_mf,unique(goa_mf$surv),sex=FALSE,pname="MF")
+lfreq_num_plot(goa_mf,tolower(unique(goa_mf$surv)),sex=FALSE,pname="MF")
 
 #Remove oracle_pw ans user name before saving workspace
 rm(oracle_pw)
