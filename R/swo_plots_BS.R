@@ -39,17 +39,17 @@ region = 'BS'
 
 # data ----
 spec <- vroom::vroom(here::here('data', 'species_bs.csv'))
-s50 <- vroom::vroom(here::here('output', region, 'boot50_ess_sz.csv')) %>% 
+s50 <- vroom::vroom(here::here('output', region, 'ss50_ess_sz.csv')) %>% 
   mutate.(id = 50) 
-s75 <- vroom::vroom(here::here('output', region, 'boot75_ess_sz.csv')) %>% 
+s75 <- vroom::vroom(here::here('output', region, 'ss75_ess_sz.csv')) %>% 
   mutate.(id = 75)
-s100 <- vroom::vroom(here::here('output', region, 'boot100_ess_sz.csv')) %>% 
+s100 <- vroom::vroom(here::here('output', region, 'ss100_ess_sz.csv')) %>% 
   mutate.(id = 100) 
-s125 <- vroom::vroom(here::here('output', region, 'boot125_ess_sz.csv')) %>% 
+s125 <- vroom::vroom(here::here('output', region, 'ss125_ess_sz.csv')) %>% 
   mutate.(id = 125) 
-s150 <- vroom::vroom(here::here('output', region, 'boot150_ess_sz.csv')) %>% 
+s150 <- vroom::vroom(here::here('output', region, 'ss150_ess_sz.csv')) %>% 
   mutate.(id = 150)
-s175 <- vroom::vroom(here::here('output', region, 'boot175_ess_sz.csv')) %>% 
+s175 <- vroom::vroom(here::here('output', region, 'ss175_ess_sz.csv')) %>% 
   mutate.(id = 175)
 base <- vroom::vroom(here::here('output', region, 'base_ess_sz.csv')) %>% 
   mutate.(id = 'base')
