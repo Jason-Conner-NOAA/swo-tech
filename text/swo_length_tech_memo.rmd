@@ -339,7 +339,7 @@ knitr::include_graphics(here::here('figs', 'ai_samples_per_haul_MF.png'))
 ```
 
 ```{r ebs-samples-per-haul, fig.cap="Number of sexed length samples collected per haul compared to catch per haul for the most recent three years of the eastern Bering Sea bottom trawl survey. The red dashed line represents the historical target sample size of 200."}
-knitr::include_graphics(here::here('figs', 'ebs_samples_per_haul_MF.png'))
+knitr::include_graphics(here::here('figs', 'ebs_shelf_samples_per_haul_MF.png'))
 ```
 
 ```{r goa-samples-per-haul, fig.cap="Number of sexed length samples collected per haul compared to catch per haul for the most recent three years of the Gulf of Alaska bottom trawl survey. The red dashed line represents the historical target sample size of 200."}
