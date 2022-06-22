@@ -59,11 +59,11 @@ source(here::here('R', "render_toc.R"))
 
 # Abstract 
 
-During Alaska Fishery Science Center bottom trawl surveys length frequency data are collected and sex is subsequently determined from a subset of these collected data so that sex-specific length composition data are available for assessment of groundfish stocks. 
+Length frequency data are collected and sex is subsequently determined from a subset of these collected data during Alaska Fishery Science Center bottom trawl surveys. This is done so that sex-specific length composition data are available for assessment of groundfish stocks. 
 Determining sex from the length frequency data has resulted in acute and repetitive stress injuries of survey staff, and these injuries have become increasingly common. 
 In December 2021, a working group was formed (the Survey Workflow Optimization working group) to evaluate the effect of reducing the amount of length frequency data for which sex is determined from historical levels in the bottom trawl surveys on length composition uncertainty. 
-The working group developed a bootstrap-simulation approach that determined the amount of uncertainty gained by reducing the amount of length frequency data for which sex was subsequently determined over the spring of 2022. 
-It was shown that the length composition input sample size was reduced by 25% or less compared to the input sample size for the full historical data sets for sub-sampling levels of 100 fish per haul for which sex was subsequently determined. 
+The working group developed a bootstrap-simulation approach that determined the amount of uncertainty gained by reducing the amount of length frequency data for which sex was subsequently determined. The analysis was completed during the spring of 2022. 
+It was shown that for the majority of species the length composition input sample size was reduced by 25% or less compared to the input sample size for the full historical data sets for sub-sampling levels of 100 fish per haul for which sex was subsequently determined. 
 Upon meeting with stock assessment authors the joint recommendation between the working group and assessment authors to the survey staff was to limit length frequency data for which sex is subsequently determined to 100 subsampled fish per haul.
 
 \newpage
