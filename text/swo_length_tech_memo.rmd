@@ -221,7 +221,8 @@ Effective sample size is given by:
  (\#eq:eqn7)
 \end{equation}
 
-where $E_c$ is the estimated proportion for category-*c* (which can be either age or length or any other arbitrary category across which proportions are computed) and $O_c$ is the observed proportion.
+where $E_c$ is the estimated proportion for category-*c* (which can be either age or length or any other arbitrary category across which proportions are computed) and $O_c$ is the observed proportion.  
+Therefore, higher ESS indicates less uncertainty in the size composition estimate.
  
 In this bootstrap-simulation the underlying length composition derived from the historical bottom trawl surveys was treated as the observed proportions $O_c$ in equation \@ref(eq:eqn7). 
 For each iteration of the bootstrap simulation for a determined sex sub-sample size we computed a sex-specific estimated proportion ($E_c$) that was then compared to the underlying historical sex-specific length composition (the effective sample size for the total length composition, as the sum of population abundance at length, was also computed). 
@@ -238,12 +239,12 @@ These trends were similar within years as well.
 The species most frequently sampled for lengths across all the surveys was walleye pollock in the eastern Bering Sea survey (Table \@ref(tab:ebs-avg-samples)), with nearly 50% more samples in some years as the next most frequently sampled species (arrowtooth flounder in the Gulf of Alaska, Table  \@ref(tab:goa-avg-samples)).
 
 The number of sexed sampled lengths per haul for species of interest are summarized in Figures \@ref(fig:ai-samples-per-haul) - \@ref(fig:goa-samples-per-haul), each of which summarize the most recent three years of data. 
-The species with the greatest number of hauls exceeding the sampling target of 200 samples are walleye pollock, yellowfin sole, and northern rock sole in the eastern Bering Sea; Pacific ocean perch, northern rockfish, and walleye pollock in the Aleutian Islands; and Pacific ocean perch, arrowtooth flounder, and walleye pollock in the Gulf of Alaska. 
+The species with the greatest number of hauls exceeding the sampling minimum of 200 samples are walleye pollock, yellowfin sole, and northern rock sole in the eastern Bering Sea; Pacific ocean perch, northern rockfish, and walleye pollock in the Aleutian Islands; and Pacific ocean perch, arrowtooth flounder, and walleye pollock in the Gulf of Alaska. 
 The largest frequency of hauls that exceeded the sampling target of 200 length samples compared to all other species in each survey was for eastern Bering Sea walleye pollock (Figure \@ref(fig:ebs-samples-per-haul)). 
 
 In general, for each region investigated the mean of the replicated sex-specific effective sample size for length composition increased as the number of collected lengths for which sex was determined increased (Figures \@ref(fig:ai-length) - \@ref(fig:goa-length-flats)). 
 For a number of species, the sub-sampling case of 175 sexed lengths was nearly equivalent to the base case (in which no sub-sampling occurred), indicating that for these species around 175 or less lengths have been subsequently sexed historically.
-There were notable exceptions to the sub-sampling case of 175 being similar to the base case, indicating that in the historical surveys there were a number of hauls in which more than 175 length collections were subsequently sexed. 
+There were notable exceptions to the sub-sampling case of 175 being similar to the base case, indicating that in the historical surveys there were a number of hauls in which more than 175 sex-specific length were measured. 
 These exceptions include arrowtooth flounder in the Gulf of Alaska (Figure \@ref(fig:goa-length-flats)) and eastern Bering Sea (Figure \@ref(fig:ebs-length)), and walleye pollock in the eastern Bering Sea (Figure \@ref(fig:ebs-length)), with the most extreme difference resulting for eastern Bering Sea walleye pollock. 
 For all the species and regions investigated the mean of the replicated effective sample size for the total length composition (the sum of the female, male, and unsexed population at length estimates) were insensitive to the sexed sub-sampling cases. 
 
@@ -279,12 +280,12 @@ This same single-sex modeling approach is used for the eastern Bering Sea Pacifi
 
 Another notable exception to the input sample size being reduced by less than 25% for sex sub-sampling cases of 100 - 175 fish, though not as extreme as eastern Bering Sea walleye pollock, were some of the flatfish stocks in the eastern Bering Sea *and maybe GOA*. 
 All of the flatfish assessments performed by the AFSC are sex-specific [e.g., @Spies2021], thus, the reduction in the sex-specific input sample size for length composition based on the sexed sub-sampling level may have a greater influence on the results of these assessments. 
-Further, some of these flatfish assessments use the sex-specific length frequency samples in addition to the sex-specific specimen collections (which include information on weight and age for an individual fish) to estimate growth internally and fit age composition data in the assessment model through conditional age-at-length methods [e.g., @Turnock2017]. 
+Further, some of these flatfish assessments use the sex-specific length frequency samples in addition to the age specimen collections (which include information on sex, weight and age for an individual fish) to estimate growth internally and fit age composition data in the assessment model through conditional age-at-length methods [e.g., @Turnock2017]. 
 In addition, recent research has indicated that growth of certain flatfish stocks may be regionally-specific and thus spatially-explicit stock assessments have been developed to account for different growth rates in different regions [@Mcgilliard2017; @Bryan2021]. 
 The influence of sub-sampling for sex determination of length frequency data and how that relates to assessment output sensitivity to reduction in input sample size, conditional age-at-length results, and spatially-explicit assessments remains unknown, thus, we recommend that additional flatfish-specific analysis would be performed to determine the influence of sex sub-sampling and that caution would be used when reducing flatfish sex sampling on the AFSC bottom trawl surveys in some cases. 
 
 On April 8, 2022 the SWO working group met with a subset of AFSC assessment authors as well as representatives from the Groundfish Assessment Program to discuss the results of this work and the need for changes to be made on the AFSC bottom trawl surveys as it pertains to sex determination and the physical health of survey staff. 
-The group of assessment authors noted that a reduction of 25% or less in the sex-specific length composition input sample size was acceptable in order to reduce injuries of survey staff, particularly if the amount of specimen data collected was unchanged and remained at historical levels. 
+The group of assessment authors noted that a reduction of 25% or less in the sex-specific length composition input sample size was acceptable in order to reduce injuries of survey staff, particularly if the amount of age specimen data collected was unchanged and remained at historical levels. 
 It was agreed that in future AFSC bottom trawl surveys the sampling limit for sex determination of length frequency collections would be set at 100, but that if authors of certain stock assessments (e.g., flatfish assessments) were concerned with that level that the survey would be flexible and consider stock-specific limits of sex determination that were larger than 100. 
 This joint recommendation will be applied starting with the 2022 eastern Bering Sea and Aleutian Islands bottom trawl surveys, and the 2023 Gulf of Alaska bottom trawl survey. 
 
