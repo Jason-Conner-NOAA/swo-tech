@@ -58,7 +58,7 @@ source(here::here('R', "render_toc.R"))
 \newpage
 
 # Abstract 
-*test*
+
 During Alaska Fisheries Science Center bottom trawl surveys length frequency sub-samples are collected to provide sex-specific length composition data for groundfish stock assessments. 
 Determining sex for each individual in the length frequency sub-samples (e.g., upwards of 200 per tow per species) has resulted in acute and repetitive stress injuries of survey staff, and these injuries have become increasingly common. 
 In December 2021, a working group was formed to evaluate the effect of reducing length frequency sub-sample sizes for which sex is determined on length composition uncertainty. 
