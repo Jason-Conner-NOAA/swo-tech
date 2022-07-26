@@ -106,6 +106,8 @@ Survey length sub-sampling protocols have been altered at least once during the 
 Historically, AFSC trawl survey standard operating procedures directed scientists to collect a minimum of 200 length specimens per species where more than 200 were in a trawl sample. 
 However, analysis of length frequency sample size found that 10 random length specimens should be sampled for each length bin range of a sample [@Gerritsen2007].
 This change in methodology has been applied to some species sampled in the EBS survey, although with varying consistency. 
+Traditionally, a high degree of independence has been conferred to each Deck Lead regarding sub-sample selection, and these analyses have been provided as guidelines. 
+Thus there is some inherent variability in the application of these guidelines, as there are multiple Deck Leads assigned to multiple vessels and legs for a cruise, with an inclination to sample more than less.
 
 The Resource Assessment and Conservation Engineering (RACE) Division of AFSC hosts data collected from bottom trawl surveys on an internal SQL-based server ("RACEBASE").
 For the analysis we conducted, RACEBASE was queried using the R package sumfish (https://github.com/afsc-gap-products/sumfish). 
